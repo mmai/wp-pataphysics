@@ -2,9 +2,12 @@
 
 Enable a shortcode which displays dates according to the Pataphysical Calendar
 
-`[pataphysics_date]` : display the current day with the default format `%D %d %M %y`
-`[pataphysics_date date="2017-01-28"]` : convert a grégorian calendar date to the Pataphysical calendar. 
-`[pataphysics_date format="%D %d %M %y - %S (%I)"]` : display the date with a given format, with the following syntax : 
+`[pataphysics-date]` : display the current day with the default format `%D %d %M %y`
+
+`[pataphysics-date date="2017-01-28"]` : convert a grégorian calendar date to the Pataphysical calendar. 
+
+`[pataphysics-date format="%D %d %M %y - %S (%I)"]` : display the date with a given format, with the following syntax : 
+
  * %d : day (ex: 23)
  * %m : month (ex: 5)
  * %y : year (ex: 44)
