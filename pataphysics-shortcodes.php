@@ -31,7 +31,7 @@ function pataphysicsDateShortcode( $attributes ) {
 
     extract( shortcode_atts([
         "date" => '',
-        "format" => $current_user->ID,
+        "format" => '',
     ], $attributes, 'pataphysics-date' ) );
 
     $date = !empty($date) ? "'".$date."'": '';
@@ -73,11 +73,6 @@ window.addEventListener('load', showPataDate$pataphysicsDateNo, false);
     return $script;
 }
 
-function pataphysics_shortcode_wp_enqueue_scripts() {
-    wp_register_script( 'PataphysicalDate', plugins_url( '/js/PataphysicalDate.min.js', __FILE__ ), array(), '1.0.0', all );
-}
-
-add_action( 'wp_enqueue_scripts', 'pataphysics_shortcode_wp_enqueue_scripts' );
 add_shortcode('pataphysics-date', 'pataphysicsDateShortcode');
 
 
