@@ -3,7 +3,7 @@ Contributors: @rhumbs
 Tags: shortcode, widget
 Requires at least: 2.5
 Tested up to: 4.7
-Stable tag: master
+Stable tag: trunk
 
 Enable a shortcode which displays dates according to the Pataphysical Calendar
 
